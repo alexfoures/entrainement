@@ -45,6 +45,18 @@
 		<None Remove="$(SpaRoot)**" />
 		<None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
 	</ItemGroup>
+	
+	<ItemGroup>
+	  <Content Remove="web.config" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <None Include="web.config" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="Controllers\" />
+	</ItemGroup>
 
 	<Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
 
