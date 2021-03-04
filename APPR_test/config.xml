@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entityFramework>
+	<contexts>
+		<context type="ContosoUniversity.DAL.SchoolContext, ContosoUniversity">
+			<databaseInitializer type="APPR_test.data.Initializer, APPR_test" />
+		</context>
+	</contexts>
+	<defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+		<parameters>
+			<parameter value="v11.0" />
+		</parameters>
+	</defaultConnectionFactory>
+	<providers>
+		<provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+	</providers>
+</entityFramework>
